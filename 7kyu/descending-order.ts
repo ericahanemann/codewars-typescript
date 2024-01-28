@@ -9,7 +9,7 @@
 
 function descendingOrder(n: number): number {
   const digits = n.toString().split("").map(Number);
-  const orderedNumber= parseInt(digits.sort((a, b) => b - a).join(), 10);
+  const orderedNumber= parseInt(digits.sort((a, b) => b - a).join(""), 10);
 
   return orderedNumber;
 }
